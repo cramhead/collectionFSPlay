@@ -1,4 +1,6 @@
-var Images = new FS.Collection("images");
+var Images = new FS.Collection("images", {
+	useHTTP: true
+});
 
 Template.filePicker.events({
 	'change .myFileInput': function(event, template) {
