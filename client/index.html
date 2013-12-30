@@ -3,9 +3,8 @@
   <title>collectionFSPlay</title>
 </head>
 <body>
- 
+  
 </body>
-
 <template name="layout">
   {{yield}}
 </template>
@@ -13,25 +12,22 @@
 <template name="home">
   Items
   <ul>
-  {{#each items}}
+    {{#each items}}
     <li>{{name}}</li>
-  {{/each}}
+    {{/each}}
   </ul>
-
   {{> filePicker}}
   {{> imageList}}
 </template>
 
 <template name='filePicker'>
-    <input class='myFileInput' type="file">
+  <input class='myFileInput' type="file">
 </template>
 
 <template name="imageList">
-    <div>
-        {{#each images}}
-
-
-        <img src="{{cfsFileUrl}}" alt="">
-        {{/each}}
-    </div>
-  </template>
+  <div>
+    {{#each images}}
+    <img src="{{cfsFileUrl}}" alt="">
+    {{/each}}
+  </div>
+</template>

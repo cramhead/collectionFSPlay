@@ -16,6 +16,17 @@ Images = new FS.Collection("images", {
 	}
 });
 
+Images.allow({
+	insert: function (userId, doc) {
+		return true;
+	},
+	update: function (userId, doc, fields, modifier) {
+		return true;
+	},
+	remove: function (userId, doc) {
+		return true;
+	}
+});
 Meteor.publish('items', function(){
 	return Items.find();
 });
