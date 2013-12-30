@@ -16,6 +16,7 @@ Images = new FS.Collection("images", {
 	}
 });
 
+// can't insert without a this section
 Images.allow({
 	insert: function (userId, doc) {
 		return true;
@@ -27,6 +28,8 @@ Images.allow({
 		return true;
 	}
 });
+
+
 Meteor.publish('items', function(){
 	return Items.find();
 });
