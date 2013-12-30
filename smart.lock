@@ -1,0 +1,85 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "bootstrap-3": {
+        "version": "0.3.7"
+      },
+      "collectionFS": {
+        "git": "https://github.com/CollectionFS/Meteor-CollectionFS.git",
+        "branch": "devel-merge"
+      },
+      "cfs-gridfs": {
+        "git": "https://github.com/CollectionFS/Meteor-cfs-gridfs.git",
+        "branch": "master"
+      },
+      "cfs-filesystem": {
+        "git": "https://github.com/CollectionFS/Meteor-cfs-filesystem.git",
+        "branch": "master"
+      },
+      "cfs-handlebars": {
+        "git": "https://github.com/CollectionFS/Meteor-cfs-handlebars.git",
+        "branch": "master"
+      },
+      "cfs-graphicsmagick": {
+        "git": "https://github.com/CollectionFS/Meteor-cfs-graphicsmagick.git",
+        "branch": "master"
+      },
+      "iron-router": {
+        "version": "0.6.1"
+      }
+    },
+    "packages": {
+      "bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
+        "tag": "v0.3.7",
+        "commit": "5dd0d142c870647b910be80bc777b96f0dd45e5e"
+      },
+      "collectionFS": {
+        "git": "https://github.com/CollectionFS/Meteor-CollectionFS.git",
+        "branch": "devel-merge",
+        "commit": "668cde1c9028e53ca5f5d2e520ac9115a0bb9421"
+      },
+      "cfs-gridfs": {
+        "git": "https://github.com/CollectionFS/Meteor-cfs-gridfs.git",
+        "branch": "master",
+        "commit": "25ad032a003f2e587822a334a34aa1d41d1aace8"
+      },
+      "cfs-filesystem": {
+        "git": "https://github.com/CollectionFS/Meteor-cfs-filesystem.git",
+        "branch": "master",
+        "commit": "130d8853a2d46eea8848b8df9dba8b935daf8988"
+      },
+      "cfs-handlebars": {
+        "git": "https://github.com/CollectionFS/Meteor-cfs-handlebars.git",
+        "branch": "master",
+        "commit": "eda3b483e4537f704089502fadd4ac76b18574ad"
+      },
+      "cfs-graphicsmagick": {
+        "git": "https://github.com/CollectionFS/Meteor-cfs-graphicsmagick.git",
+        "branch": "master",
+        "commit": "9838dfb4eaa018d653cc74c88b8ecf70e70ad598"
+      },
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.6.1",
+        "commit": "4e1ee0581d68bff422a915dacb0bd30eae10fe08"
+      },
+      "http-methods": {
+        "git": "https://github.com/CollectionFS/Meteor-http-methods.git",
+        "tag": "v0.0.11",
+        "commit": "1da8dedddceebcfff8ceb6371aaff4a38668cf6a"
+      },
+      "collection-hooks": {
+        "git": "https://github.com/matb33/meteor-collection-hooks.git",
+        "tag": "v0.6.0",
+        "commit": "b563164c78d5ab4ad2258ce06736af6d4f0f33ba"
+      },
+      "power-queue": {
+        "git": "https://github.com/CollectionFS/Meteor-powerqueue.git",
+        "branch": "master",
+        "commit": "e71ac27d7428de6fbe8e071fb28432194e437503"
+      }
+    }
+  }
+}
