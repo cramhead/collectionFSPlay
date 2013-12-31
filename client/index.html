@@ -6,6 +6,7 @@
   
 </body>
 <template name="layout">
+  {{loginButtons}}
   {{yield}}
 </template>
 
@@ -13,21 +14,37 @@
   Items
   <ul>
     {{#each items}}
-    <li>{{name}}</li>
+    <li>
+     {{> item}}
+    </li>
     {{/each}}
   </ul>
-  {{> filePicker}}
-  {{> imageList}}
+ 
+
+</template>
+
+<template name="item">
+   <div>
+        <div>{{name}}</div>
+        <div>{{creationDate}}</div>
+        <div>
+          Images
+            {{> imageList}}
+        </div>
+        <div>
+          <input class='myFileInput' type="file">
+        </div>
+      </div>
 </template>
 
 <template name='filePicker'>
-  <input class='myFileInput' type="file">
+
 </template>
 
 <template name="imageList">
   <div>
-    {{#each images}}
-    <img src="{{cfsFileUrl}}" alt="">
+    {{#each images}}    
+        <img src="{{url}}" alt="">    
     {{/each}}
   </div>
 </template>

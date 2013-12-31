@@ -15,3 +15,6 @@ power-queue
 http-methods
 collection-hooks
 iron-router
+accounts-base
+accounts-ui
+accounts-password

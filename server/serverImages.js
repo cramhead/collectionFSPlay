@@ -18,13 +18,16 @@ Images = new FS.Collection("images", {
 
 // can't insert without a this section
 Images.allow({
-	insert: function (userId, doc) {
+	insert: function(userId, file) {
 		return true;
 	},
-	update: function (userId, doc, fields, modifier) {
+	update: function(userId, files, fields, modifier) {
 		return true;
 	},
-	remove: function (userId, doc) {
+	remove: function(userId, files) {
+		return true;
+	},
+	download: function(userId, file) {
 		return true;
 	}
 });
