@@ -49,8 +49,7 @@ Template.home.items = function(){
 };
 
 
-Handlebars.registerHelper('url', function(imageFileOject) {
-		var fsFile = new FS.File(imageFileOject);
-		return fsFile.url();
+Handlebars.registerHelper('urlhelper', function() {
+		return this.url();
 	}
 );

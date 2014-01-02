@@ -43,8 +43,11 @@
 
 <template name="imageList">
   <div>
-    {{#each images}}    
-        <img src="{{url}}" alt="">    
+    {{#each images}} 
+    <div>
+        <img src="{{urlhelper}}" alt="">  
+       {{cfsDownloadButton}}
+       </div>   
     {{/each}}
   </div>
 </template>
