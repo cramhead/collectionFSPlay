@@ -5,13 +5,16 @@
 <body>
   
 </body>
+
 <template name="layout">
+  <div class='layout'>
   {{loginButtons}}
   {{yield}}
+  <div>
 </template>
 
 <template name="home">
-  Items
+  <h3>Items</h3>
   <ul>
     {{#each items}}
     <li>
@@ -19,16 +22,14 @@
     </li>
     {{/each}}
   </ul>
- 
-
 </template>
 
 <template name="item">
-   <div>
-        <div>{{name}}</div>
+   <div class="item">
+        <div><h3>{{name}}</h3></div>
         <div>{{creationDate}}</div>
         <div>
-          Images
+          <h4>Images</h4>
             {{> imageList}}
         </div>
         <div>
@@ -44,7 +45,7 @@
 <template name="imageList">
   <div>
     {{#each images}} 
-    <div>
+    <div class='imageList'>
         <img src="{{urlhelper}}" alt="">  
        {{cfsDownloadButton}}
        </div>   

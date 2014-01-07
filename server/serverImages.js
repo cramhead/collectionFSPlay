@@ -2,6 +2,7 @@ Images = new FS.Collection("images", {
 	useHTTP: true,
 	store: new FS.FileSystemStore("images", "~/uploads"),
 	beforeSave: function () {
+		//resize the images to 60px
 		this.gm().resize(60, 60).save();
 	},
 	filter: {
@@ -32,46 +33,20 @@ Images.allow({
 	}
 });
 
-
+// publish all items
 Meteor.publish('items', function(){
 	return Items.find();
 });
 
-Meteor.publish('images', function(){
-	return Images.find();
-});
-
-function getAssetPath() {
-    var meteor_root = Npm.require('fs').realpathSync(process.cwd() + '/../');
-    console.log(meteor_root);
-
-    var application_root = Npm.require('fs').realpathSync(meteor_root + '/../');
-    // if running on dev mode
-    if (Npm.require('path').basename(Npm.require('fs').realpathSync(meteor_root + '/../../../')) == '.meteor') {
-        application_root = Npm.require('fs').realpathSync(meteor_root + '/../../../../');
-    }
-
-    var assets_folder = meteor_root + '/server/assets/app';
-    //var assets_folder = meteor_root + '/server/assets/' + Npm.require('path').basename( application_root );
-    console.log(assets_folder);
-    return assets_folder;
-}
+/** do NOT publish the images as their refence is in each Item **/
+// Meteor.publish('images', function(){
+// 	return Images.find();
+// });
 
 if (Meteor.isServer) {
 	Meteor.startup(function() {
 
-		//fs = Npm.require('fs');
-
-    // var loadImages = function() {
-
-    //     var assets_folder = getAssetPath();
-    //     var image = fs.readFileSync(assets_folder + '/20131022_GR-Limited-Edition.jpg', 'binary');
-    //     //fs.writeFileSync('/Users/cram/Desktop/test.jpg', image, {encoding: 'binary', mode: 777});
-    //     var saved = Images.storeBuffer('20131022_GR-Limited-Edition.jpg', image, {encoding: 'binary', noProgress: true, contentType: 'image/jpeg'});
-    // };
-    // loadImages();
-
-
+		// Insert items seed data
 		if (Items.find().count() === 0) {
 			console.log("Adding sample items");
 
@@ -80,7 +55,6 @@ if (Meteor.isServer) {
 				Items.insert({
 					name: seeditems[i],
 					creationDate: new Date()
-
 				});
 			}
 		}

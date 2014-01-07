@@ -2,9 +2,7 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "bootstrap-3": {
-        "version": "0.3.7"
-      },
+      "bootstrap-3": {},
       "collectionFS": {
         "git": "https://github.com/CollectionFS/Meteor-CollectionFS.git",
         "branch": "devel-merge"
@@ -25,9 +23,7 @@
         "git": "https://github.com/CollectionFS/Meteor-cfs-graphicsmagick.git",
         "branch": "master"
       },
-      "iron-router": {
-        "version": "0.6.1"
-      }
+      "iron-router": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -38,7 +34,7 @@
       "collectionFS": {
         "git": "https://github.com/CollectionFS/Meteor-CollectionFS.git",
         "branch": "devel-merge",
-        "commit": "668cde1c9028e53ca5f5d2e520ac9115a0bb9421"
+        "commit": "5e9d347d6fcb9da77aaee2d3a1923393337c56b3"
       },
       "cfs-gridfs": {
         "git": "https://github.com/CollectionFS/Meteor-cfs-gridfs.git",
@@ -48,17 +44,17 @@
       "cfs-filesystem": {
         "git": "https://github.com/CollectionFS/Meteor-cfs-filesystem.git",
         "branch": "master",
-        "commit": "130d8853a2d46eea8848b8df9dba8b935daf8988"
+        "commit": "c59f735b479661667908c0f59ccce87f8b783aea"
       },
       "cfs-handlebars": {
         "git": "https://github.com/CollectionFS/Meteor-cfs-handlebars.git",
         "branch": "master",
-        "commit": "eda3b483e4537f704089502fadd4ac76b18574ad"
+        "commit": "676dde6b5138be38d244dc1e10d699959f3cfdc4"
       },
       "cfs-graphicsmagick": {
         "git": "https://github.com/CollectionFS/Meteor-cfs-graphicsmagick.git",
         "branch": "master",
-        "commit": "9838dfb4eaa018d653cc74c88b8ecf70e70ad598"
+        "commit": "373a691d04221c9ad024970feb56d913810f3f26"
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
@@ -72,13 +68,28 @@
       },
       "collection-hooks": {
         "git": "https://github.com/matb33/meteor-collection-hooks.git",
-        "tag": "v0.6.0",
-        "commit": "b563164c78d5ab4ad2258ce06736af6d4f0f33ba"
+        "tag": "v0.6.1",
+        "commit": "f8baa3b5a56ab35272c9260c623e1ae85ade6596"
       },
       "power-queue": {
         "git": "https://github.com/CollectionFS/Meteor-powerqueue.git",
         "branch": "master",
-        "commit": "e71ac27d7428de6fbe8e071fb28432194e437503"
+        "commit": "de3366d2b87e89a57145d39ca99efaa78d30f80d"
+      },
+      "join": {
+        "git": "https://github.com/CollectionFS/Meteor-join.git",
+        "branch": "master",
+        "commit": "cc80fc20ed8877546d24fb6e91308111439e9fa2"
+      },
+      "reactive-property": {
+        "git": "https://github.com/CollectionFS/Meteor-reactive-property.git",
+        "branch": "master",
+        "commit": "f742b8656bb88fafff2a9c3a32ff1f97b3ebf2f7"
+      },
+      "reactive-list": {
+        "git": "https://github.com/CollectionFS/Meteor-reactive-list.git",
+        "branch": "master",
+        "commit": "753217c29e3b659260bdb5c372a3a57fec92257c"
       }
     }
   }

@@ -45,7 +45,7 @@ var addImageToItem = function(itemId, image){
 
 
 Template.home.items = function(){
-  return Items.find();
+  return Items.find({}, {sort: {creationDate: -1}});
 };
 
 
